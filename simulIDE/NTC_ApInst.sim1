@@ -1,7 +1,7 @@
 <circuit version="" rev="1751" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
 
 <item itemtype="Subcircuit" CircId="Uno-63" mainComp="false" Show_id="true" Show_Val="false" Pos="-328,-384" rotation="0" hflip="1" vflip="1" label="Arduino Uno-63" idLabPos="72,-22" labelrot="0" valLabPos="0,0" valLabRot="0" Logic_Symbol="false">
-<mainCompProps MainCompId="63_mega328-109" Frequency="16 MHz" Auto_Load="false" saveEepr="true" SerialMon="-1" />
+<mainCompProps MainCompId="63_mega328-109" Frequency="16 MHz" Program="../.pio/build/uno/firmware.hex" Auto_Load="false" saveEepr="true" SerialMon="-1" />
 </item>
 
 <item itemtype="Ground" CircId="Ground-6" mainComp="false" Show_id="false" Show_Val="false" Pos="-96,-276" rotation="0" hflip="1" vflip="1" label="Ground-6" idLabPos="-16,8" labelrot="0" valLabPos="0,0" valLabRot="0" />
@@ -42,9 +42,9 @@
 
 <item itemtype="TextComponent" CircId="TextComponent-147" mainComp="false" Show_id="false" Show_Val="false" Pos="-88,-520" rotation="0" hflip="1" vflip="1" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="5 _Pixels" Border="1 _Pixels" Color="#ffffdc" Opacity="1" Font="Helvetica [Cronyx]" Font_Size="10 _Pixels" Font_Color="#000080" Fixed_Width="false" Text=" V0     R3         R1&#xa;---- &#x3D ---- (1+2 ------ ) &#xa; Vi     R2        Rgain" />
 
-<item itemtype="SerialPort" CircId="SerialPort-293" mainComp="false" Show_id="false" Show_Val="false" Pos="-288,-420" rotation="0" hflip="1" vflip="1" label="SerialPort-293" idLabPos="-20,-32" labelrot="0" valLabPos="-16,20" valLabRot="0" Port="COM18" Baudrate="115200 _Bauds" DataBits="8 _Bits" StopBits="1 _Bits" SerialMon="false" />
+<item itemtype="SerialPort" CircId="SerialPort-293" mainComp="false" Show_id="false" Show_Val="false" Pos="-288,-420" rotation="0" hflip="1" vflip="1" label="SerialPort-293" idLabPos="-20,-32" labelrot="0" valLabPos="-16,20" valLabRot="0" Port="COM20" Baudrate="115200 _Bauds" DataBits="8 _Bits" StopBits="1 _Bits" SerialMon="false" />
 
-<item itemtype="Thermistor" CircId="Thermistor-301" mainComp="false" ShowProp="Temp" Show_id="false" Show_Val="true" Pos="220,-340" rotation="-90" hflip="1" vflip="1" label="Thermistor-301" idLabPos="-16,-24" labelrot="0" valLabPos="-13,7" valLabRot="90" Temp="137.6 ºC" Min_Temp="0 ºC" Max_Temp="200 ºC" Dial_Step="0 ºC" B="3455" R25="10000 Ω" Slider="false" Scale="1" />
+<item itemtype="Thermistor" CircId="Thermistor-301" mainComp="false" ShowProp="Temp" Show_id="false" Show_Val="true" Pos="220,-340" rotation="-90" hflip="1" vflip="1" label="Thermistor-301" idLabPos="-16,-24" labelrot="0" valLabPos="-13,7" valLabRot="90" Temp="152.4 ºC" Min_Temp="0 ºC" Max_Temp="200 ºC" Dial_Step="0 ºC" B="3455" R25="10000 Ω" Slider="false" Scale="1" />
 
 <item itemtype="Node" CircId="Node-81" mainComp="false" Pos="32,-432" />
 

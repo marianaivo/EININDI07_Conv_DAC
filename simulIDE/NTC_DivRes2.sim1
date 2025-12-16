@@ -1,0 +1,33 @@
+<circuit version="" rev="1751" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Subcircuit" CircId="Uno-24" mainComp="false" Show_id="true" Show_Val="false" Pos="168,-340" rotation="0" hflip="1" vflip="1" label="Arduino Uno-24" idLabPos="100,-21" labelrot="0" valLabPos="0,0" valLabRot="0" Logic_Symbol="false">
+<mainCompProps MainCompId="24_mega328-109" Frequency="16 MHz" Program="../.pio/build/uno/firmware.hex" Auto_Load="false" saveEepr="true" SerialMon="1" />
+</item>
+
+<item itemtype="Ground" CircId="Ground-10" mainComp="false" Show_id="false" Show_Val="false" Pos="400,-256" rotation="0" hflip="1" vflip="1" label="Ground-10" idLabPos="-16,8" labelrot="0" valLabPos="0,0" valLabRot="0" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-8" mainComp="false" Show_id="false" Show_Val="true" Pos="400,-396" rotation="90" hflip="1" vflip="1" label="Fixed Voltage-8" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" Out="true" />
+
+<item itemtype="Resistor" CircId="Resistor-33" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="400,-356" rotation="90" hflip="1" vflip="1" label="Resistor-33" idLabPos="-12,-20" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="10 kΩ" />
+
+<item itemtype="Thermistor" CircId="Thermistor-40" mainComp="false" ShowProp="Temp" Show_id="false" Show_Val="true" Pos="400,-296" rotation="-90" hflip="1" vflip="1" label="Thermistor-40" idLabPos="-16,-24" labelrot="0" valLabPos="-10,14" valLabRot="90" Temp="174 ºC" Min_Temp="0 ºC" Max_Temp="200 ºC" Dial_Step="0 ºC" B="3455" R25="10000 Ω" Slider="false" Scale="1" />
+
+<item itemtype="SerialPort" CircId="SerialPort-48" mainComp="false" Show_id="false" Show_Val="false" Pos="204,-376" rotation="0" hflip="1" vflip="1" label="SerialPort-48" idLabPos="-20,-32" labelrot="0" valLabPos="-16,20" valLabRot="0" Port="COM4" Baudrate="115200 _Bauds" DataBits="8 _Bits" StopBits="1 _Bits" SerialMon="false" />
+
+<item itemtype="Node" CircId="Node-52" mainComp="false" Pos="400,-324" />
+
+<item itemtype="Connector" uid="Connector-52" startpinid="SerialPort-48-pin0" endpinid="Uno-24-0" pointList="164,-384,148,-384,148,-324,176,-324" />
+
+<item itemtype="Connector" uid="Connector-53" startpinid="SerialPort-48-pin1" endpinid="Uno-24-1" pointList="164,-368,192,-368,192,-316,176,-316" />
+
+<item itemtype="Connector" uid="Connector-56" startpinid="Thermistor-40-lPin" endpinid="Ground-10-Gnd" pointList="400,-280,400,-272" />
+
+<item itemtype="Connector" uid="Connector-57" startpinid="Resistor-33-lPin" endpinid="Fixed Voltage-8-outnod" pointList="400,-372,400,-380" />
+
+<item itemtype="Connector" uid="Connector-58" startpinid="Resistor-33-rPin" endpinid="Node-52-0" pointList="400,-340,400,-324" />
+
+<item itemtype="Connector" uid="Connector-59" startpinid="Uno-24-A5" endpinid="Node-52-1" pointList="320,-324,400,-324" />
+
+<item itemtype="Connector" uid="Connector-60" startpinid="Node-52-2" endpinid="Thermistor-40-rPin" pointList="400,-324,400,-312" />
+
+</circuit>
